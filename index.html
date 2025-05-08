@@ -42,34 +42,27 @@
       padding: 20px;
     }
 
-    .div1 { 
-      background-color: #FFF3E8; 
-      grid-row: span 3; 
-
-    }
-    #div1{
-      height: -50px;
-    }
-    .div2 { 
-      background-color: #7A5AF8; 
-      color: #fff; text-align: center; 
+    .div1 { background-color: #FFF3E8; 
+      grid-row: span 3;
+     }
+    .div2 { background-color: #7A5AF8; 
+      color: #fff; 
+      text-align: center; 
       grid-column: span 2; 
       grid-row: span 2; 
       align-items: center; 
       justify-content: center; 
       padding: 30px 20px; 
     }
-    .div3 { 
-      background-color: #EFE9FF; 
-      grid-row: span 3; grid-column: 4 / span 1; 
+    .div3 { background-color: #EFE9FF; 
+      grid-row: span 3; 
+      grid-column: 4 / span 1; 
     }
-    .div4 { 
-      background-color: #faf9f4; 
+    .div4 { background-color: #faf9f4; 
       grid-column: 2 / span 1; 
-      grid-row: 4 / span 1; 
-    }
-    .div6 { 
-      background-color: #fff; 
+      grid-row: 4 / span 1;
+     }
+    .div6 { background-color: #fff; 
       grid-column: 2 / span 1; 
       grid-row: 3 / span 1; 
     }
@@ -79,15 +72,16 @@
     }
     .div8 { background-color: #FFD066; 
       grid-column: 1 / span 1; 
-      grid-row: 4 / span 2; 
-    }
-    .div10 { background-color: #7A5AF8; 
-      color: #fff; grid-column: span 2; 
-      grid-row: 4 / span 2; 
-      align-items: right; 
-      text-align: right; 
-    display: flex;
-    flex-direction: row;
+      grid-row: 4 / span 2;
+     }
+
+    .div10 {
+      background-color: #7A5AF8;
+      color: #fff;
+      grid-column: span 2;
+      grid-row: 4 / span 2;
+      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
@@ -97,6 +91,18 @@
       width: 100%;
       border-radius: 12px;
       margin-top: 20px;
+    }
+
+    .div10 img {
+      width: 50%;
+     
+    }
+
+    .div10 p {
+      font-size: 28px;
+      font-weight: 500;
+      flex-direction: row;
+      text-align:right;
     }
 
     .title {
@@ -128,8 +134,7 @@
       font-weight: 600;
     }
 
-    
-    
+
     @media (max-width: 768px) {
       .grid {
         display: flex;
@@ -140,6 +145,19 @@
       .grid > div {
         width: 100%;
       }
+
+      .div10 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .div10 img {
+        width: 100%;
+      }
+
+      .div10 p {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -148,7 +166,7 @@
     <div class="grid">
       <div class="div1">
         <p class="title">Create and schedule content <span class="highlight">quicker</span></p>
-        
+  
         <img src="./assets/images/illustration-create-post.webp" alt="create">
       </div>
       <div class="div2">
@@ -162,7 +180,7 @@
         <p style="font-size: 16px; margin-top: 10px;">Optimize post timings to publish content at the perfect time for your audience.</p>
       </div>
       <div class="div4">
-        <p class="percent">>56%</p>
+        <p class="percent">&gt;56%</p>
         <p>faster audience growth</p>
         <img src="./assets/images/illustration-audience-growth.webp" alt="growth">
       </div>
@@ -180,7 +198,7 @@
       </div>
       <div class="div10">
         <img src="./assets/images/illustration-grow-followers.webp" alt="grow">
-        <p style="font-size: 28px; font-weight: 500; margin-top: 15px;">Grow followers with non-stop content.</p>
+        <p>Grow followers with non-stop content.</p>
       </div>
     </div>
   </div>
