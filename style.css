@@ -1,0 +1,58 @@
+
+.boddy{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+.create-post{
+  grid-row: span2 / span2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.five-star{
+  grid-column: span2 / span2;
+  grid-row: span2 / span2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.schedule-post{
+ 
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ai-content{
+  grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.multiple-platforms{
+  grid-column-start: 2;
+  grid-row-start: 3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.consistent-schedule{
+  grid-column-start: 3;
+    grid-row-start: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.audience-growth{
+  grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.grow-followers{
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-row-start: 4;
+}
